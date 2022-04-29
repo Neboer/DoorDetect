@@ -116,6 +116,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -130,6 +131,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -139,17 +141,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="determiner.cpp" />
+    <ClCompile Include="args.cpp" />
     <ClCompile Include="FuckOffLetMeAlone.cpp" />
     <ClCompile Include="get_regon.cpp" />
-    <ClCompile Include="PointDetector.cpp" />
+    <ClCompile Include="pipeline.cpp" />
+    <ClCompile Include="CoincidenceDetector.cpp" />
+    <ClCompile Include="shift_desktop.cpp" />
+    <ClCompile Include="stopwatch.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="D:\Downloads\performance_test.png" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="determiner.h" />
-    <ClInclude Include="PointDetector.h" />
+    <ClInclude Include="args.h" />
+    <ClInclude Include="pipeline.h" />
+    <ClInclude Include="CoincidenceDetector.h" />
+    <ClInclude Include="stopwatch.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

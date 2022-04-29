@@ -29,4 +29,3 @@ cv::Rect get_regon_from_click(cv::VideoCapture& camera) {
 	cv::destroyWindow("rect");
 	return cv::Rect(regon[0], regon[2], regon[1]-regon[0], regon[3]-regon[2]);
 }
-
